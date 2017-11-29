@@ -32,7 +32,7 @@ local api="http://${pg_dz_domoticz_ip}:${pg_dz_domoticz_port}/json.htm?type=devi
 pg_dz_idx $1
 local idx=$?
 if [ $idx != 0 ]; then
-local curl="$(curl -s "${api}&rid=${idx}" | jq -r '.result[0].Data'")"
+local curl="$(curl -s "${api}&rid=${idx}" | jq -r '.result[0].Data')"
 say "$(pg_dz_lg "stat" "$device") $curl"
 else
 return 0
