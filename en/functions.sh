@@ -1,17 +1,13 @@
 #!/bin/bash
-# Here you can define translations to be used in the plugin functions file
-# the below code is an sample to be reused:
-# 1) uncomment to function below
-# 2) replace XXX by your plugin name (short)
-# 3) remove and add your own translations
-# 4) you can the arguments $2, $3 passed to this function
-# 5) in your plugin functions.sh file, use it like this:
-#      say "$(pv_myplugin_lang the_answer_is "oui")"
-#      => Jarvis: La réponse est oui
-
-#pg_XXX_lang () {
-#    case "$1" in
-#        i_check) echo "Je regarde...";;
-#        the_answer_is) echo "La réponse est $2";;
-#    esac
-#} 
+pg_dz_lg() {
+    case "$1" in
+        no_device_matching) warning "Aucun appareil ne correspond. Ajoutez le dans vos favoris Domoticz, ou declarez un incident si il s'y trouve deja.";;
+        switch_on) echo "I switched on $2";;
+        switch_off) echo "I switched off $2";;
+        blind_on) echo "I've closed $2";;
+        blind_off) echo "I've opened $2";;
+		stat) echo "Wait... $2:";;
+		temp) echo "Temperature of $2:";;
+        *) error "ERROR: ";;
+    esac
+}
