@@ -33,7 +33,6 @@ pg_dz_idx $1
 local idx=$?
 if [ $idx != 0 ]; then
 local curl="$(pg_dz_st "$(curl -s "${api}&rid=${idx}" | jq -r '.result[0].Data')")"
-
 say "$(pg_dz_lg "stat" "$device") $curl"
 else
 return 0
