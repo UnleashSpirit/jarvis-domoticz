@@ -14,6 +14,9 @@ Plugin Jarvis pour l'application Domoticz.
 
 Ce plugin permet le pilotage de vos devices favoris dans Domoticz. Vous pouvez donc controler les etats simples des lumieres (switch), les volets (blinds), connaitre la temperature et l'etat d'un device.
 
+Vous n'avez qu'a configurer l'adresse IP de votre serveur domoticz et le port, si besoin.
+
+
 ## Usage
 ```
 You: Jarvis, allume le salon
