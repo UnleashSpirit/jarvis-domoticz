@@ -1,4 +1,5 @@
 #!/bin/bash
+
 #Fonction pour commander un switch
 pg_dz_switch () {
 local api="http://${pg_dz_domoticz_ip}:${pg_dz_domoticz_port}/json.htm?${pg_dz_api_switch}${1}"
