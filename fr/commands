@@ -1,0 +1,6 @@
+*ALLUM[^ ]+ (*)==pg_dz_switch On "(1)"
+*ETEIN[^ ]+ (*)==pg_dz_switch Off "(1)"
+*FERME (*)==pg_dz_blind On "(1)"
+*OUVRE (*)==pg_dz_blind Off "(1)"
+*QUEL*ETAT (*)==pg_dz_stat "(1)"
+*COMBIEN*DEGREE*FAIT* (*)|*DONNE*TEMPERATURE (*)|*QUELLE*TEMPERATURE (*)==pg_dz_temp "(1)"
