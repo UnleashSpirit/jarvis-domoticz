@@ -16,8 +16,20 @@ Ce plugin permet le pilotage de vos devices favoris dans Domoticz. Vous pouvez d
 
 ## Usage
 ```
-You: Allume le salon
-Jarvis:J'ai allumé le salon
+You: Jarvis, allume le salon
+Jarvis: J'ai allumé le salon
+```
+```
+You: Jarvis, ferme les volets.
+Jarvis: J'ai allumé le salon
+```
+```
+You: Jarvis, quel est l'etat du volet?
+Jarvis: Le volet est: close
+```
+```
+You: Jarvis, donne moi la temperature du salon
+Jarvis: La termperature du salon: 21.2 degrés
 ```
 
 ## Author
