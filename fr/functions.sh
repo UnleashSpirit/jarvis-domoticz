@@ -12,3 +12,13 @@ pg_dz_lg() {
         *) jv_error "ERROR: ";;
     esac
 }
+
+pg_dz_st() {
+    case "$1" in
+        On) echo "Allumé";;
+        Off) echo "Eteins";;
+        Closed) echo "Fermé";;
+        Open) echo "Ouvert";;
+        *) jv_error "Etat inconnu. Signalez-le.";;
+    esac
+}
