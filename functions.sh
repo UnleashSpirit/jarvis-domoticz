@@ -2,7 +2,7 @@
 
 #Fonction pour commander un switch
 pg_dz_switch () {
-local api="http://${pg_dz_domoticz_ip}:${pg_dz_domoticz_port}/json.htm?${pg_dz_api_switch}${1}"
+local api="http://${pg_dz_domoticz_ip}:${pg_dz_domoticz_port}/json.htm?type=command&param=switchlight&switchcmd=${1}"
 pg_dz_idx $2
 local idx=$?
 if [ $idx != 0 ]; then
@@ -15,7 +15,7 @@ fi
 
 #Fonction pour commander un volet
 pg_dz_blind () {
-local api="http://${pg_dz_domoticz_ip}:${pg_dz_domoticz_port}/json.htm?${pg_dz_api_switch}${1}"
+local api="http://${pg_dz_domoticz_ip}:${pg_dz_domoticz_port}/json.htm?type=command&param=switchlight&switchcmd=${1}"
 pg_dz_idx $2
 local idx=$?
 if [ $idx != 0 ]; then
@@ -28,7 +28,7 @@ fi
 
 #Fonction pour demander l'etat d'un device
 pg_dz_stat () {
-local api="http://${pg_dz_domoticz_ip}:${pg_dz_domoticz_port}/json.htm?${pg_dz_api_temp}"
+local api="http://${pg_dz_domoticz_ip}:${pg_dz_domoticz_port}/json.htm?type=devices"
 pg_dz_idx $1
 local idx=$?
 if [ $idx != 0 ]; then
@@ -41,7 +41,7 @@ fi
 
 #Fonction pour demander une temperature
 pg_dz_temp () {
-local api="http://${pg_dz_domoticz_ip}:${pg_dz_domoticz_port}/json.htm?${pg_dz_api_temp}"
+local api="http://${pg_dz_domoticz_ip}:${pg_dz_domoticz_port}/json.htm?type=devices"
 pg_dz_idx $1
 local idx=$?
 if [ $idx != 0 ]; then
