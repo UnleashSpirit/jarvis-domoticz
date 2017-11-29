@@ -1,0 +1,6 @@
+*SWITCH ON (*)==pg_dz_switch On "(1)"
+*SWITCH OFF (*)==pg_dz_switch Off "(1)"
+*CLOSE (*)==pg_dz_blind On "(1)"
+*OPEN (*)==pg_dz_blind Off "(1)"
+*WICH*STAT* (*)==pg_dz_stat "(1)"
+*TEMPERATURE* (*)==pg_dz_temp "(1)"
