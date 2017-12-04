@@ -24,7 +24,7 @@ Jarvis: J'ai allumé le salon
 ```
 ```
 You: Jarvis, ferme les volets.
-Jarvis: J'ai allumé le salon
+Jarvis: J'ai fermé les volets
 ```
 ```
 You: Jarvis, quel est l'etat du volet?
